@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox Test</title>
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<style>
+#gridRight {
+  overflow: hidden !important;
+  padding: 0 0 30px 40px;
+  width: 300px;
+  /* background: #E6E7E9; */
+}
+.centerModule {
+  margin: 0 0 10px;
+  line-height: 150%;
+}
+.rightModule, .rightModuleAds {
+  line-height: 16px;
+  margin: 0 0 10px !important;
+  padding: 0;
+}
+#gridRight .rightModule {
+  border: 0 none;
+  clear: both;
+  padding: 16px 0;
+  width:auto;
+}
+#gridRight ul {
+  list-style:none;
+}
+
+/*730px*/
+@media screen and (max-width: 45.625em) {
+  ul.nonBulleted {
+    height: auto !important;
+  }
+
+  #gridRight {
+    width: 100%;
+    height: auto !important;
+  }
+
+  #grid_wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #gridRight {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2; 
+    width: 100%;
+    padding-left: 0;
+  }
+  #gridCenter {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+}
+	</style>
+<div id="grid_wrapper">  
+  <div id="gridRight"> 
+    <div class="rightModule gradientBg" style="display: block;">
+      <ul class="bigBulleted">
+        <li>
+          <h2><a class="Custom_Bold" href="https://purchase.travelguardworldwide.com/Purchase-Path_1549_299726.html" target="_blank">Get a quote now!</a></h2>
+        </li> 
+      </ul>
+    </div> 
+  </div>
+  <div id="gridCenter">
+    <div class="centerModule">
+      <p></p><div><div><h2><a href="/individual-travel_3914_532689.html">Individual</a></h2><div>Travel insurance available for the individual, family or group travellers.
+      <br></div><div><br></div><h2><a href="/business-travel_3914_532690.html">Business</a></h2><div>Travel insurance catering to the specific needs of today’s business traveller.
+      <br></div><div><br></div><h2><a href="/student-travel_3914_532691.html">Student</a></h2><div>Youth traveller and student cover for peace of mind while you explore the world.
+      <br><br></div><h3>Over R2 billion paid out in claims by AIG companies in South Africa for 2012.</h3></div></div><p></p>
+    </div>
+    <br class="both">
+  </div>  
+  <div class="clear"></div> 
+</div>
+</body>
+</html>
